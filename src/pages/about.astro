@@ -1,40 +1,71 @@
 ---
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout
-  title="About"
-  description="About AI DevOps Hub"
-  pubDate={new Date('May 13 2026')}
->
-  <h2>👋 Hey, I'm Sanjay!</h2>
-  <p>
-    I'm a Cloud & DevOps professional with hands-on experience in 
-    <strong>Azure, AWS, CI/CD pipelines, FinOps, and AI-powered infrastructure</strong>.
-  </p>
-  <p>
-    I built <strong>AI DevOps Hub</strong> to share daily, bite-sized insights on:
-  </p>
-  <ul>
-    <li>🤖 <strong>AI Tools for DevOps</strong> — AIOps, GitHub Copilot, AI-powered automation</li>
-    <li>☁️ <strong>Cloud Tutorials</strong> — Azure, AWS, multi-cloud guides for beginners & pros</li>
-    <li>💰 <strong>FinOps & Cost Optimization</strong> — Save money on your cloud bill using AI</li>
-    <li>🔒 <strong>DevSecOps</strong> — Shift-left security with modern AI tools</li>
-    <li>🎓 <strong>Career & Certifications</strong> — Roadmaps, tips, and real-world advice</li>
-  </ul>
-  <p>
-    I also create <strong>daily YouTube Shorts</strong> — each one covering a single AI or Cloud/DevOps 
-    concept in 60 seconds. Learn something new every day! 🚀
-  </p>
-  <h3>🎯 Mission</h3>
-  <p>
-    Make AI + Cloud/DevOps knowledge <strong>accessible, practical, and actionable</strong> 
-    for engineers at every level.
-  </p>
-  <h3>📬 Connect</h3>
-  <ul>
-    <li>GitHub: <a href="https://github.com/sanjay659" target="_blank">@sanjay659</a></li>
-    <li>YouTube: <em>Coming soon!</em></li>
-    <li>LinkedIn: <em>Coming soon!</em></li>
-  </ul>
-</Layout>
+<!doctype html>
+<html lang="en">
+    <head>
+        <BaseHead title="About — AI DevOps Hub" description="About AI DevOps Hub and Sanjay Thakur" />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <article class="about-content">
+                <h1>About</h1>
+
+                <h2>👋 Hey, I'm Sanjay!</h2>
+                <p>
+                    I'm a Cloud & DevOps professional with hands-on experience in
+                    <strong>Azure, AWS, CI/CD pipelines, FinOps, and AI-powered infrastructure</strong>.
+                </p>
+                <p>
+                    I built <strong>AI DevOps Hub</strong> to share daily, bite-sized insights on:
+                </p>
+                <ul>
+                    <li>🤖 <strong>AI Tools for DevOps</strong> — AIOps, GitHub Copilot, AI-powered automation</li>
+                    <li>☁️ <strong>Cloud Tutorials</strong> — Azure, AWS, multi-cloud guides for beginners & pros</li>
+                    <li>💰 <strong>FinOps & Cost Optimization</strong> — Save money on your cloud bill using AI</li>
+                    <li>🔒 <strong>DevSecOps</strong> — Shift-left security with modern AI tools</li>
+                    <li>🎓 <strong>Career & Certifications</strong> — Roadmaps, tips, and real-world advice</li>
+                </ul>
+                <p>
+                    I also create <strong>daily YouTube Shorts</strong> — each one covering a single AI or Cloud/DevOps
+                    concept in 60 seconds. Learn something new every day! 🚀
+                </p>
+
+                <h3>🎯 Mission</h3>
+                <p>
+                    Make AI + Cloud/DevOps knowledge <strong>accessible, practical, and actionable</strong>
+                    for engineers at every level.
+                </p>
+
+                <h3>📬 Connect</h3>
+                <ul>
+                    <li>GitHub: <a href="https://github.com/sanjay659" target="_blank">@sanjay659</a></li>
+                    <li>YouTube: <em>Coming soon!</em></li>
+                    <li>LinkedIn: <em>Coming soon!</em></li>
+                </ul>
+            </article>
+        </main>
+        <Footer />
+    </body>
+</html>
+
+<style>
+    main {
+        width: 720px;
+        max-width: calc(100% - 2em);
+        margin: auto;
+        padding: 2em 0;
+    }
+    .about-content h1 {
+        text-align: center;
+        font-size: 2.2em;
+        margin-bottom: 1em;
+    }
+    .about-content h2 {
+        font-size: 1.5em;
+        margin-top: 1.5em;
+    }
