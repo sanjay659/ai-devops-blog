@@ -1,5 +1,3 @@
 // Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
 export const SITE_TITLE = 'AI DevOps Hub';
 export const SITE_DESCRIPTION = 'Daily AI, Cloud & DevOps insights — tutorials, tools, and tips for modern engineers.';
